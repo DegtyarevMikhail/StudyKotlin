@@ -1,11 +1,16 @@
 package com.example.studykotlin
 
 import android.content.ClipData.newIntent
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+
+var fromLoopActivity = false
+private const val OTHER_EXTRA_IS_TRUE = "main_activity_kotlin"
 
 private lateinit var activityButton: Button
 
@@ -35,6 +40,14 @@ class MainActivity : AppCompatActivity() {
 
             val intent = WeatherActivity.newIntent(this@MainActivity, isTrue)
             startActivityForResult(intent, REQUEST_CODE)
+        }
+    }
+
+    companion object {
+        fun lastIntent(packageContext: Context, fromLoopActivity: Boolean): Intent {
+            return Intent(packageContext, MainActivity::class.java).apply {
+                putExtra(OTHER_EXTRA_IS_TRUE, fromLoopActivity)
+            }
         }
     }
 }

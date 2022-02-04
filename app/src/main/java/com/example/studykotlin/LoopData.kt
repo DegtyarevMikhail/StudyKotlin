@@ -1,6 +1,6 @@
 package com.example.studykotlin
 
-class LoopClass (forLoops: Any?){
+class LoopData (val forLoops: Any?){
 fun forLoops() {
     val someList: List<String> = arrayListOf()
     for (listElement in someList) {

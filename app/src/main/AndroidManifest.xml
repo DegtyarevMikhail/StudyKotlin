@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyKotlin">
         <activity
+            android:name=".LoopActivity"
+            android:exported="false" />
+        <activity
             android:name=".WeatherActivity"
             android:exported="false" />
         <activity

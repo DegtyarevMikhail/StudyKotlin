@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">StudyKotlin</string>
-    <string name="button">button</string>
-    <string name="weather">weather</string>
+    <string name="button">show the Name</string>
+    <string name="weather">show the weather</string>
     <string name="change_activity">change_activity</string>
+    <string name="loop">loop</string>
+    <string name="lookloop">LookLoop</string>
+    <string name="loopactivity">loopActivity</string>
 </resources>
